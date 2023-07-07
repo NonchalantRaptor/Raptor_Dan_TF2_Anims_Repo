@@ -1,0 +1,146 @@
+// Created by Crowbar 0.74
+
+$modelname "weapons\v_models\v_riot_heavy\v_medic_riot_heavy_no_glass.mdl"
+
+$bodygroup "studio"
+{
+	studio "v_medic_riot_heavy_no_glass.smd"
+}
+
+
+$surfaceprop "default"
+
+$contents "solid"
+
+$illumposition 0 0 0
+
+$cdmaterials "models\workshop\weapons\c_models\c_batonshield\"
+
+$cbox 0 0 0 0 0 0
+
+$hboxset "default"
+
+$hbox 0 "weapon_bone"	   -20.00  -49.50   -2.50    20.00   25.50    2.50
+
+$definebone "root" "" 0.000000 7.999476 69.116623 -0.000000 0.000000 -71.831146 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "bip_collar_L" "root" 2.131427 -5.805794 -7.194567 -17.631231 -75.554573 -156.575500 0.000000 0.000000 -0.000000 -0.000000 -0.000003 -0.000002
+$definebone "bip_upperArm_L" "bip_collar_L" 0.000153 -14.061882 -0.000043 8.876265 -37.396038 49.844116 0.000000 0.000000 0.000002 0.000002 -0.000001 0.000003
+$definebone "bip_lowerArm_L" "bip_upperArm_L" 0.000015 -17.670925 -0.000027 -0.000229 -0.000516 -75.590202 0.000000 0.000000 0.000000 0.000001 0.000002 -0.000005
+$definebone "bip_hand_L" "bip_lowerArm_L" -0.000004 -15.175156 0.000501 -31.838295 -28.707375 -11.567621 0.000000 0.000000 0.000001 -0.000002 -0.000009 -0.000001
+$definebone "bip_thumb_0_L" "bip_hand_L" -2.440086 -1.974159 3.836565 11.662837 -29.679897 -44.861622 -0.000001 0.000000 -0.000004 -0.000006 -0.000002 -0.000011
+$definebone "bip_thumb_1_L" "bip_thumb_0_L" -0.000007 -4.365021 -0.000019 -0.000063 0.000055 27.712814 0.000001 0.000000 0.000000 -0.000006 0.000001 -0.000011
+$definebone "bip_thumb_2_L" "bip_thumb_1_L" -0.000003 -1.793217 0.000000 0.000051 -0.000228 -17.637541 0.000001 0.000000 0.000002 -0.000006 -0.000001 -0.000013
+$definebone "bip_index_0_L" "bip_hand_L" -0.751579 -6.859741 4.600639 77.620918 163.773727 172.638138 -0.000000 0.000000 0.000000 0.000003 0.000001 -0.000004
+$definebone "bip_index_1_L" "bip_index_0_L" 0.000017 -3.600685 0.000008 0.000117 0.000115 53.651417 0.000000 0.000000 0.000000 0.000002 -0.000002 0.000005
+$definebone "bip_index_2_L" "bip_index_1_L" 0.000009 -2.262768 -0.000004 -0.000054 0.000169 4.468390 0.000000 0.000000 0.000000 -0.000000 -0.000003 0.000000
+$definebone "bip_middle_0_L" "bip_hand_L" -0.713036 -6.783451 1.947199 68.239136 155.919037 177.163284 -0.000000 0.000000 0.000002 0.000003 -0.000000 0.000000
+$definebone "bip_middle_1_L" "bip_middle_0_L" 0.040725 -4.737331 -0.016127 0.000003 0.000171 47.021099 0.000000 0.000000 -0.000002 0.000002 -0.000002 0.000010
+$definebone "bip_middle_2_L" "bip_middle_1_L" -0.000002 -2.758442 0.000006 0.000002 -0.000002 5.248189 -0.000000 0.000000 0.000000 0.000003 -0.000003 0.000010
+$definebone "bip_ring_0_L" "bip_hand_L" -1.681076 -6.576664 -0.639788 65.725792 156.981705 -178.818726 0.000000 0.000004 0.000000 0.000004 0.000001 -0.000003
+$definebone "bip_ring_1_L" "bip_ring_0_L" -0.000012 -3.781086 -0.000010 0.000004 -0.000172 34.561619 -0.000000 0.000000 0.000000 0.000003 -0.000002 0.000005
+$definebone "bip_ring_2_L" "bip_ring_1_L" 0.000000 -2.398426 -0.000002 0.000003 0.000055 16.826174 -0.000000 0.000004 0.000000 0.000003 -0.000003 0.000007
+$definebone "bip_pinky_0_L" "bip_hand_L" -2.639690 -6.552834 -2.641663 58.305317 139.782150 169.755798 0.000000 0.000000 0.000000 0.000007 -0.000001 0.000000
+$definebone "bip_pinky_1_L" "bip_pinky_0_L" -0.000004 -3.015041 0.000006 0.000006 0.000056 31.245453 0.000000 0.000000 0.000000 0.000005 -0.000004 0.000002
+$definebone "bip_pinky_2_L" "bip_pinky_1_L" -0.000003 -1.878254 0.000007 -0.000052 -0.000003 20.546610 0.000000 -0.000004 -0.000002 0.000003 -0.000005 -0.000003
+$definebone "bip_collar_R" "root" -2.131430 -5.805740 -7.194574 17.631001 75.555199 23.424294 0.000000 0.000001 0.000000 -0.000000 -0.000003 0.000000
+$definebone "bip_upperArm_R" "bip_collar_R" -0.000206 14.061871 0.000042 -32.458061 -48.386574 -17.738655 0.000000 -0.000004 0.000001 -0.000000 0.000000 0.000001
+$definebone "bip_lowerArm_R" "bip_upperArm_R" -0.000023 17.670925 0.000056 -0.000001 -0.000229 -25.322384 -0.000004 -0.000004 0.000000 -0.000000 -0.000003 0.000000
+$definebone "bip_hand_R" "bip_lowerArm_R" 0.000046 15.175589 -0.000049 0.019536 0.004755 0.000113 0.000000 0.000002 0.000000 -0.000000 0.000000 -0.000003
+$definebone "bip_thumb_0_R" "bip_hand_R" 2.440144 1.974110 -3.836592 11.663014 -29.680075 -44.861622 0.000001 0.000000 0.000004 0.000001 0.000002 -0.000007
+$definebone "bip_thumb_1_R" "bip_thumb_0_R" -0.000045 4.365004 0.000008 0.000173 0.000289 27.712704 0.000000 0.000000 0.000002 0.000001 0.000001 -0.000007
+$definebone "bip_thumb_2_R" "bip_thumb_1_R" 0.000011 1.793224 0.000013 -0.000513 -0.000228 -17.637482 0.000000 0.000000 0.000004 0.000002 0.000003 -0.000004
+$definebone "bip_index_0_R" "bip_hand_R" 0.751545 6.859665 -4.600672 77.622185 163.774109 172.638474 0.000000 0.000000 0.000000 0.000000 0.000001 0.000001
+$definebone "bip_index_1_R" "bip_index_0_R" -0.000017 3.600670 0.000044 0.001033 0.000459 53.651485 0.000000 0.000000 0.000000 0.000001 -0.000001 0.000000
+$definebone "bip_index_2_R" "bip_index_1_R" -0.000013 2.262806 -0.000042 0.000231 -0.000114 4.468323 0.000000 0.000000 -0.000001 0.000001 -0.000000 -0.000005
+$definebone "bip_middle_0_R" "bip_hand_R" 0.713017 6.783396 -1.947224 68.239594 155.918808 177.163055 0.000000 0.000000 0.000000 0.000002 0.000002 0.000002
+$definebone "bip_middle_1_R" "bip_middle_0_R" 0.000011 4.729753 0.000046 0.000174 -0.000114 47.021103 -0.000002 0.000000 0.000001 0.000002 0.000001 -0.000003
+$definebone "bip_middle_2_R" "bip_middle_1_R" -0.000006 2.758453 0.000012 0.000118 0.000001 5.248064 0.000000 0.000000 -0.000001 0.000003 0.000001 -0.000002
+$definebone "bip_ring_0_R" "bip_hand_R" 1.681049 6.576635 0.639768 65.725060 156.981995 -178.818558 -0.000001 0.000000 0.000000 -0.000000 0.000002 0.000003
+$definebone "bip_ring_1_R" "bip_ring_0_R" 0.000010 3.781071 0.000057 -0.000631 -0.000001 34.561680 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000007
+$definebone "bip_ring_2_R" "bip_ring_1_R" 0.000009 2.398411 0.000023 -0.000058 0.000001 16.826572 0.000000 0.000000 -0.000001 -0.000000 0.000000 0.000005
+$definebone "bip_pinky_0_R" "bip_hand_R" 2.639725 6.552765 2.641610 58.305717 139.782196 169.755798 0.000000 0.000000 -0.000001 -0.000000 0.000000 0.000003
+$definebone "bip_pinky_1_R" "bip_pinky_0_R" 0.000008 3.015026 -0.000035 0.000114 0.000001 31.245455 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+$definebone "bip_pinky_2_R" "bip_pinky_1_R" 0.000006 1.878239 -0.000030 0.000115 -0.000057 20.547014 0.000000 0.000000 0.000000 0.000000 0.000001 -0.000002
+$definebone "weapon_bone" "" 0.000000 0.000000 0.000000 -0.000000 0.000000 89.999985 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+
+$bonemerge "weapon_bone"
+$bonemerge "root"
+$bonemerge "bip_collar_l"
+$bonemerge "bip_upperarm_l"
+$bonemerge "bip_lowerarm_l"
+$bonemerge "bip_hand_l"
+$bonemerge "bip_thumb_0_l"
+$bonemerge "bip_thumb_1_l"
+$bonemerge "bip_thumb_2_l"
+$bonemerge "bip_index_0_l"
+$bonemerge "bip_index_1_l"
+$bonemerge "bip_index_2_l"
+$bonemerge "bip_middle_0_l"
+$bonemerge "bip_middle_1_l"
+$bonemerge "bip_middle_2_l"
+$bonemerge "bip_ring_0_l"
+$bonemerge "bip_ring_1_l"
+$bonemerge "bip_ring_2_l"
+$bonemerge "bip_pinky_0_l"
+$bonemerge "bip_pinky_1_l"
+$bonemerge "bip_pinky_2_l"
+$bonemerge "bip_collar_r"
+$bonemerge "bip_upperarm_r"
+$bonemerge "bip_lowerarm_r"
+$bonemerge "bip_hand_r"
+$bonemerge "bip_thumb_0_r"
+$bonemerge "bip_thumb_1_r"
+$bonemerge "bip_thumb_2_r"
+$bonemerge "bip_index_0_r"
+$bonemerge "bip_index_1_r"
+$bonemerge "bip_index_2_r"
+$bonemerge "bip_middle_0_r"
+$bonemerge "bip_middle_1_r"
+$bonemerge "bip_middle_2_r"
+$bonemerge "bip_ring_0_r"
+$bonemerge "bip_ring_1_r"
+$bonemerge "bip_ring_2_r"
+$bonemerge "bip_pinky_0_r"
+$bonemerge "bip_pinky_1_r"
+$bonemerge "bip_pinky_2_r"
+
+$sequence "draw" {
+	"anims\draw.smd"
+	activity "ACT_VM_DRAW" 1
+	{ event 5004 1 "Weapon_Minigun.Draw" }
+	fadein 0.2
+	fadeout 0.2
+	transition "lowered" "raised"
+	snap
+	fps 30
+}
+
+$sequence "idle" {
+	"anims\idle.smd"
+	activity "ACT_VM_IDLE" 1
+	fadein 0.2
+	fadeout 0.2
+	node "raised"
+	fps 30
+	loop
+}
+
+$sequence "swing" {
+	"anims\swing.smd"
+	activity "ACT_VM_HITCENTER" 1
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 30
+}
+
+$sequence "swing_crit" {
+	"anims\swing_crit.smd"
+	activity "ACT_VM_SWINGHARD" 1
+	fadein 0.2
+	fadeout 0.2
+	node "raised"
+	snap
+	fps 30
+}
+

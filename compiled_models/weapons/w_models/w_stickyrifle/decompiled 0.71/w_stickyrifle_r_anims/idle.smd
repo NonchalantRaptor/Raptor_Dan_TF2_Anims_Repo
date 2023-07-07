@@ -1,0 +1,11 @@
+// Created by Crowbar 0.71
+version 1
+nodes
+  0 "weapon_bone" -1
+  1 "weapon_bone_1" 0
+end
+skeleton
+  time 0
+    0 0.000000 0.000000 0.000000 1.570784 0.000012 -0.000012
+    1 1.512900 2.825600 2.896700 1.570780 -1.023090 -1.570780
+end

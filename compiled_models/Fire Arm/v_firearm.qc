@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons\v_models\v_firearm_engineer_slow.mdl"
+$modelname "weapons\v_models\v_firearm_engineer_fast.mdl"
 
 $bodygroup "pistol"
 {
@@ -129,7 +129,7 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire_slow.smd"
+	"anims\fire_fast.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	fadein 0.2
 	fadeout 0.2
@@ -145,8 +145,6 @@ $sequence "reload" {
 	{ event 5004 10 "Weapon_GrenadeLauncher.DrumStop" }
 	{ event 5004 24 "Building_Sentrygun.Build1" }
 	{ event 5004 24 "Selection.DemoClipSpin" }
-	{ event AE_CL_MAG_EJECT_VM 2 "" }
-	{ event AE_CL_MAG_EJECT_UNHIDE_VM 8 "" }
 	fadein 0.2
 	fadeout 0.2
 	fps 30

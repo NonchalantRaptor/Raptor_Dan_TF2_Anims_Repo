@@ -1,0 +1,177 @@
+//-----------------------------
+//-----------------------------
+//--FIRE BLASTER - 9194--
+//-----------------------------
+//-----------------------------
+		"9194"
+		{
+			"name"						"TF_WEAPON_FIREBLASTER_PYRO"
+			"prefab"					"weapon_flamethrower"
+			"show_in_armory"			"1"
+			"item_slot"					"primary"
+			"anim_slot"                 "primary"
+			"item_class"				"tf_weapon_scattergun"
+
+			"item_quality"				"rarity2"
+
+			"propername"				"1"
+			"item_name"					"Napalm Blaster"
+			"item_type_name"			"Fire Cannon"
+			"item_description"			"This weapon fires powerful fireballs 
+
+An extra spicy mix of the hottest stuff in the black market.
+
+Model by: 'CoBalt'
+Weapon by: 'The One Of Wonders'"											
+			"item_logname"				"Napalm Blaster"
+			"item_iconname"				"Napalm Blaster"
+			"image_inventory"			"backpack/weapons/c_models/c_explothrower/c_explothrower"
+			"model_world"				"models/weapons/c_models/c_explothrower/c_explothrower.mdl"
+			"model_player"				"models/weapons/v_models/v_explothrower.mdl"
+			"attach_to_hands"			"2"
+			"used_by_classes"
+			{
+				"pyro"                "primary"
+			}
+			"static_attrs"
+			{
+				"override projectile type" 				"2"
+			}
+			"attributes"
+			{
+				"Set DamageType Ignite"												
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value" 			"1"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" 			"8"
+				}
+                "weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.45"
+				}
+                "weapon burn dmg increased"
+				{
+					"attribute_class"	"mult_wpn_burndmg"
+					"value" 			"1.5"
+				}				
+				"weapon burn time reduced"
+				{
+					"attribute_class"	"mult_wpn_burntime"
+					"value"				"0.3"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				"0.6666666667"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_reload_time_noanimmod"
+					"value"				"2.2"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_explosion_radius"
+					"value"				"0.7"
+				}
+				"strange restriction type 1"												
+				{
+					"attribute_class"	"mod_rocket_gravity"
+					"value"				"0.5"
+				}
+				"weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.2"
+				}
+                "custom projectile model"
+				{
+					"attribute_class"	"custom_projectile_model"
+					"value"				"models/weapons/w_models/w_drg_ball.mdl"
+				}	
+                "scattergun no reload single"													
+				{
+					"attribute_class"	"set_scattergun_no_reload_single"
+					"value"				"1"
+				}				
+                "airblast disabled"								// Rocket launcher.. so yea.
+				{
+					"attribute_class"	"strange_restriction_type_1"
+					"value" 			"1"
+				}
+                "crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"				"0"
+				}		
+                "rocket limited lifetime"														
+				{
+					"attribute_class"	"rocket_lifetime"
+					"value"				"0.27"
+				}
+                "weapon_stattrak_module_scale"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"1.5"
+				}				
+				"custom projectile origin offset"
+				{
+					"attribute_class"	"custom_projectile_origin_offset"
+					"value"				"30 3 -15"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"		"Weapon_Explothrower.Shoot"
+				"sound_burst"			"Weapon_Explothrower.ShootCrit"
+				"sound_special1"		"Weapon_Explothrower.Explosion"
+				"sound_empty"           "Null"
+				"sound_reload"			"Weapon_FlameThrower.Reload"
+				"trail_effect"			"fire_hoodoo_test"
+				"tracer_effect"			"bullet_scattergun_tracer01"
+				"explosion_effect"		"Explosion_Beta_Sprite_BACKUP1"
+				"animation_replacement"
+				{	
+					"ACT_MP_ATTACK_STAND_PRIMARY"				"ACT_MP_ATTACK_STAND_SECONDARYFIRE"  // Third Person
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"				"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"
+					"ACT_MP_ATTACK_SWIM_PRIMARY"				"ACT_MP_ATTACK_SWIM_SECONDARYFIRE"
+				}
+			}
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
+		}
+
+"Weapon_FlameThrower.Reload"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"		".75"
+	"wave"		"weapons/flamethrower_reload.wav"
+}
+
+"Weapon_FlameThrower.WorldReload"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"		".75"
+	"wave"		"weapons/flamethrower_reload.wav"
+}
+
+"Weapon_Explothrower.Explosion"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_95dB"
+	"pitch"		"PITCH_NORM"
+
+	"rndwave"
+	{
+			"wave"	")weapons/napalm_explode1.wav"
+			"wave"	")weapons/napalm_explode2.wav"
+			"wave"	")weapons/napalm_explode3.wav"
+	}

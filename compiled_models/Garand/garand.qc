@@ -124,6 +124,18 @@ $sequence "fire2" {
 	fps 30
 }
 
+$sequence "fire3" {
+	"anims\fire2.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event AE_CL_MAG_EJECT_UNHIDE_VM 0 "" }
+	{ event 6002 0 "3" }
+	fadein 0.2
+	fadeout 0.2
+	node "raised"
+	snap
+	fps 30
+}
+
 $sequence "reload" {
 	"anims\reload.smd"
 	activity "ACT_VM_RELOAD" 25

@@ -17,7 +17,7 @@ $cdmaterials "models\workshop\weapons\c_models\c_jungle_shotgun\"
 
 $attachment "muzzle" "weapon_bone" 0.00 3.30 35.00 rotate -90 -0 0
 $attachment "alt_muzzle" "weapon_bone" 0.00 0.15 32.00 rotate 0 -0 0
-$attachment "eject_brass" "weapon_bone" -0.80 3.60 10.00 rotate 0 0 0
+$attachment "eject_brass" "weapon_bone" 1.00 3.60 10.00 rotate -0 0 0
 
 $cbox 0 0 0 0 0 0
 
@@ -106,7 +106,7 @@ $sequence "fire" {
 $sequence "alt_fire" {
 	"anims\fire_secondary_alt.smd"
 	activity "ACT_VM_SECONDARYATTACK" 1
-	{ event 5004 7 "Weapon_ShotgunEngineer.Cock_Back" }
+	{ event 5004 6 "Weapon_ShotgunEngineer.Cock_Back" }
 	{ event 5004 13 "Weapon_ShotgunEngineer.Cock_Forward" }
 	fadein 0.2
 	fadeout 0.2

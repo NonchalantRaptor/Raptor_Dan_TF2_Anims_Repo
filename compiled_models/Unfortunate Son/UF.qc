@@ -17,7 +17,7 @@ $cdmaterials "models\workshop\weapons\c_models\c_jungle_shotgun\"
 
 $attachment "muzzle" "weapon_bone" 0.00 3.30 35.00 rotate -90 -0 0
 $attachment "alt_muzzle" "weapon_bone" 0.00 0.15 32.00 rotate 0 -0 0
-$attachment "eject_brass" "weapon_bone" -0.80 3.60 10.00 rotate 0 0 0
+$attachment "eject_brass" "weapon_bone" 1.00 3.60 10.00 rotate -0 0 0
 
 $cbox 0 0 0 0 0 0
 

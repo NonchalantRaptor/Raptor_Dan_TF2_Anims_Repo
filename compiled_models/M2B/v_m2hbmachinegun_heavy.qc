@@ -1,10 +1,10 @@
-// Created by Crowbar 0.71
+// Created by Crowbar 0.74
 
-$modelname "weapons\v_models\v_kocw_lmg_v2.mdl"
+$modelname "weapons\v_models\v_m2b_heavy_v2.mdl"
 
-$bodygroup "studio"
+$bodygroup "body"
 {
-	studio "v_kocw_lmg.smd"
+	studio "browning.smd"
 }
 
 
@@ -14,59 +14,38 @@ $contents "solid"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\workshop\weapons\c_models\c_drum_LMG\"
+$cdmaterials "models\weapons\c_models\c_browning\"
 
-$attachment "muzzle" "weapon_bone" 61.6 5.3 3.2 rotate 0 0 -180
-$attachment "eject_brass" "weapon_bone" 22 8 1 rotate 51 160 90
+$attachment "muzzle" "v_minigun_barrel" 0.00 0.40 2.00 rotate 0 0 0
+$attachment "eject_brass" "v_eject" 0.00 0.00 0.00 rotate 0 150 90
 
 $cbox 0 0 0 0 0 0
 
 $bbox -48.061 -30.088 -74.223 84.054 13.033 42.082
 
 $hboxset "default"
-$hbox 0 "weapon_bone" 17 -15 -14 55 35 14
+$hbox 0 "v_minigun_body" 17 -15 -14 55 35 14
+$hbox 0 "v_minigun_barrel" 3 5 -1.24 73 13 6.76
 $skipboneinbbox
 
-$bonemerge "weapon_bone"
 $bonemerge "root"
+$bonemerge "bip_collar_L"
 $bonemerge "bip_upperArm_L"
+$bonemerge "bip_collar_R"
 $bonemerge "bip_upperArm_R"
 $bonemerge "bip_lowerArm_L"
-$bonemerge "bip_lowerArm_R"
-$bonemerge "bip_wrist_L"
-$bonemerge "bip_wrist_R"
 $bonemerge "bip_hand_L"
-$bonemerge "bip_hand_R"
 $bonemerge "bip_thumb_0_L"
-$bonemerge "bip_thumb_0_R"
 $bonemerge "bip_thumb_1_L"
-$bonemerge "bip_thumb_1_R"
 $bonemerge "bip_thumb_2_L"
-$bonemerge "bip_thumb_2_R"
 $bonemerge "bip_index_0_L"
-$bonemerge "bip_index_0_R"
 $bonemerge "bip_index_1_L"
-$bonemerge "bip_index_1_R"
-$bonemerge "bip_index_2_L"
-$bonemerge "bip_index_2_R"
 $bonemerge "bip_middle_0_L"
-$bonemerge "bip_middle_0_R"
 $bonemerge "bip_middle_1_L"
-$bonemerge "bip_middle_1_R"
-$bonemerge "bip_middle_2_L"
-$bonemerge "bip_middle_2_R"
 $bonemerge "bip_ring_0_L"
-$bonemerge "bip_ring_0_R"
-$bonemerge "bip_ring_1_L"
-$bonemerge "bip_ring_1_R"
-$bonemerge "bip_ring_2_L"
-$bonemerge "bip_ring_2_R"
 $bonemerge "bip_pinky_0_L"
-$bonemerge "bip_pinky_0_R"
 $bonemerge "bip_pinky_1_L"
-$bonemerge "bip_pinky_1_R"
-$bonemerge "bip_pinky_2_L"
-$bonemerge "bip_pinky_2_R"
+
 
 $sequence "idle" {
 	"anims\idle.smd"
@@ -79,9 +58,8 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\spool_fire.smd"
+	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	fadein 0.2
 	fadeout 0.2
 	node "raised"
 	snap
@@ -126,5 +104,3 @@ $sequence "spool_idle" {
 	fps 30
 	loop
 }
-
-$include "DefineBones.qci"

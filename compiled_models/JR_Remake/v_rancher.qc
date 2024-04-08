@@ -173,7 +173,7 @@ $sequence "reload_end_alt" {
 
 $sequence "charge" {
 	"anims\charge2.smd"
-	activity "ACT_VM_SECONDARYATTACK_SPECIAL " 1
+	activity "ACT_VM_SECONDARYATTACK_SPECIAL" 1
 	{ event 5004 1 "Weapon_LeverRifle.Cock_Back" }
 	{ event 5004 7 "Weapon_LeverRifle.Cock_Forward" }
 	fadein 0.2
@@ -185,7 +185,7 @@ $sequence "charge" {
 
 $sequence "fire_charge" {
 	"anims\fire_charged.smd"
-	activity "ACT_VM_SECONDARYATTACK " 1
+	activity "ACT_VM_SECONDARYATTACK" 1
 	{ event 5004 10 "Weapon_LeverRifle.Cock_Back" }
 	{ event 5004 16 "Weapon_LeverRifle.Cock_Forward" }
 	{ event 6002 13 "4" }

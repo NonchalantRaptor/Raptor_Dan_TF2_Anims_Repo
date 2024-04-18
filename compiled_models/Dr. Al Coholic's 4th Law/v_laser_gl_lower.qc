@@ -101,7 +101,7 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire_weapon2.smd"
+	"anims\fire_weapon_cw.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5004 11 "Weapon_GrenadeLauncher.DrumStart" }
 	fadein 0.2

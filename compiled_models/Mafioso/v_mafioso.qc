@@ -13,10 +13,10 @@ $contents "solid"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\workshop\weapons\c_models\c_street_sweeper\"
+$cdmaterials "models\workshop\weapons\c_models\c_mafioso\"
 
-$attachment "muzzle" "weapon_bone" -0.00 2.60 30.00 rotate -90 -0 0
-$attachment "eject_brass" "weapon_bone" -1.50 3.60 11.50 rotate -4 148 180
+$attachment "muzzle" "weapon_bone" -0.00 3.20 30.00 rotate -90 -0 0
+$attachment "eject_brass" "weapon_bone" -1.50 3.60 10.00 rotate -4 148 -180
 
 $cbox 0 0 0 0 0 0
 

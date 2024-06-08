@@ -1,10 +1,10 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons/v_models/v_double_hammer_shotgun.mdl"
+$modelname "weapons/v_models/v_of_ssg_engineer.mdl"
 
 $bodygroup "default"
 {
-	studio "v_dbl_hammer_engineer.smd"
+	studio "v_of_ssg_engineer.smd"
 }
 
 $surfaceprop "default"
@@ -13,9 +13,9 @@ $contents "solid"
 
 $illumposition -0.001 23.577 -0.703
 
-$cdmaterials "models\weapons\v_supershotgun\"
+$cdmaterials "models\weapons\v_supershotgun_mercenary\"
 
-$attachment "muzzle" "weapon_bone" 0 3.73 34.92 rotate -90 0 0
+$attachment "muzzle" "weapon_bone" 0.00 4.43 41.92 rotate -90 -0 0
 $attachment "eject_brass" "root" -8 -10 -15 rotate 30 -90 0
 
 $cbox 0 0 0 0 0 0
@@ -114,7 +114,7 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire_tame.smd"
+	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	fadein 0.2
 	fadeout 0.2
@@ -124,7 +124,7 @@ $sequence "fire" {
 }
 
 $sequence "fire_duplet" {
-	"anims\fire_tame_duplet.smd"
+	"anims\fire_duplet.smd"
 	activity "ACT_VM_SECONDARYATTACK" 1
 	fadein 0.2
 	fadeout 0.2

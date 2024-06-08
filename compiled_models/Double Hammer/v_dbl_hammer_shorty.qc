@@ -1,10 +1,10 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons/v_models/v_double_hammer_shotgun.mdl"
+$modelname "weapons/v_models/v_dbl_hammer_shorty.mdl"
 
 $bodygroup "default"
 {
-	studio "v_dbl_hammer_engineer.smd"
+	studio "v_hammer_shorty_engineer.smd"
 }
 
 $surfaceprop "default"
@@ -15,7 +15,7 @@ $illumposition -0.001 23.577 -0.703
 
 $cdmaterials "models\weapons\v_supershotgun\"
 
-$attachment "muzzle" "weapon_bone" 0 3.73 34.92 rotate -90 0 0
+$attachment "muzzle" "weapon_bone" 0.00 4.30 27.00 rotate -90 -0 0
 $attachment "eject_brass" "root" -8 -10 -15 rotate 30 -90 0
 
 $cbox 0 0 0 0 0 0
@@ -134,7 +134,7 @@ $sequence "fire_duplet" {
 }
 
 $sequence "reload" {
-	"anims\reload.smd"
+	"anims\reload_cock.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 3 "Weapon_DoubleBarrel.TubeOpen" }
 	{ event 5004 6 "Weapon_DoubleBarrel.ShellsOut" }

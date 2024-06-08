@@ -1,10 +1,10 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons/v_models/v_double_hammer_shotgun.mdl"
+$modelname "weapons/v_models/v_hammer_shorty_one_engineer.mdl"
 
 $bodygroup "default"
 {
-	studio "v_dbl_hammer_engineer.smd"
+	studio "v_hammer_shorty_engineer.smd"
 }
 
 $surfaceprop "default"
@@ -92,10 +92,9 @@ $bonemerge "bip_pinky_2_L"
 $bonemerge "bip_pinky_2_R"
 
 $sequence "draw" {
-	"anims\draw.smd"
+	"anims\draw_one.smd"
 	activity "ACT_VM_DRAW" 1
 	{ event 5004 1 "Weapon_Scatter_Gun.Draw" }
-	{ event 5004 14 "Weapon_Wrench.HitHand" }
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
@@ -104,7 +103,7 @@ $sequence "draw" {
 }
 
 $sequence "idle" {
-	"anims\idle.smd"
+	"anims\idle_one.smd"
 	activity "ACT_VM_IDLE" 1
 	fadein 0.2
 	fadeout 0.2
@@ -114,7 +113,7 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire_tame.smd"
+	"anims\fire_one.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	fadein 0.2
 	fadeout 0.2
@@ -124,7 +123,7 @@ $sequence "fire" {
 }
 
 $sequence "fire_duplet" {
-	"anims\fire_tame_duplet.smd"
+	"anims\fire_duplet_one.smd"
 	activity "ACT_VM_SECONDARYATTACK" 1
 	fadein 0.2
 	fadeout 0.2
@@ -134,7 +133,7 @@ $sequence "fire_duplet" {
 }
 
 $sequence "reload" {
-	"anims\reload.smd"
+	"anims\reload_one.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 3 "Weapon_DoubleBarrel.TubeOpen" }
 	{ event 5004 6 "Weapon_DoubleBarrel.ShellsOut" }
@@ -142,7 +141,7 @@ $sequence "reload" {
 	{ event 6002 16 "3" }
 	{ event 5004 19 "Weapon_DoubleBarrel.ShellsIn" }
 	{ event 5004 32 "Weapon_DoubleBarrel.TubeClose" }
-	fadein 0.2
+	fadein 0
 	fadeout 0.2
 	node "raised"
 	fps 30

@@ -1,11 +1,12 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons\v_models\v_vetterli_scopeless.mdl"
+$modelname "weapons\v_models\v_snub_slow.mdl"
 
-$bodygroup "gun"
+$bodygroup "snub"
 {
-	studio "v_vetterli.smd"
+	studio "v_snub_slow.smd"
 }
+
 
 $surfaceprop "default"
 
@@ -13,12 +14,10 @@ $contents "solid"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\workshop\weapons\c_models\c_siderifle\"
+$cdmaterials "models\weapons\c_items"
 
 $attachment "weapon_bone" "weapon_bone" 0 0 0 rotate 0 0 0
-
-$attachment "muzzle" "weapon_bone" 0 4.5 34.08 rotate -90 0 0
-$attachment "eject_brass" "weapon_bone" 1.4 3.5 8 rotate 0 10 0
+$attachment "muzzle" "weapon_bone" 0.00 2.70 7.80 rotate -90 -0 0
 
 $cbox 0 0 0 0 0 0
 
@@ -82,9 +81,9 @@ $bonemerge "arm_attach_R"
 
 
 $sequence "draw" {
-	"anims\draw.smd"
+	"anims\draw3.smd"
 	activity "ACT_VM_DRAW" 1
-	{ event 5004 1 "Weapon_Shotgun.Draw" }
+	{ event 5004 1 "Weapon_Revolver.Draw" }
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
@@ -103,11 +102,8 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire2.smd"
+	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event 5004 21 "Weapon_SniperRifle.BoltBack" }
-	{ event 6002 27 "3" }
-	{ event 5004 30 "Weapon_SniperRifle.BoltForward" }
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
@@ -118,15 +114,17 @@ $sequence "fire" {
 $sequence "reload_start" {
 	"anims\reload_start.smd"
 	activity "ACT_RELOAD_START" 1
+	{ event 5004 1 "Weapon_Revolver.Reload1" }
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 
 $sequence "reload_loop" {
-	"anims\reload_loop.smd"
+	"anims\reload_loop4.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 13 "Weapon_Shotgun.Reload" }
+	{ event 5004 1 "Weapon_Revolver.Reload2" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -136,10 +134,10 @@ $sequence "reload_loop" {
 $sequence "reload_end" {
 	"anims\reload_end.smd"
 	activity "ACT_RELOAD_FINISH" 1
-	{ event 5004 5 "Weapon_SniperRifle.BoltBack" }
-	{ event 5004 12 "Weapon_SniperRifle.BoltForward" }
+	{ event 5004 9 "Weapon_Revolver.Reload3" }
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 

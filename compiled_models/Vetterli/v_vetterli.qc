@@ -108,7 +108,7 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire.smd"
+	"anims\fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5004 21 "Weapon_SniperRifle.BoltBack" }
 	{ event 6002 27 "3" }

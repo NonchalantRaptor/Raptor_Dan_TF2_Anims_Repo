@@ -152,7 +152,7 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire1.smd"
+	"anims\fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5004 8 "Weapon_ScatterBrain.Cock_Back" }
 	{ event 5004 14 "Weapon_ScatterBrain.Cock_Forward" }
@@ -165,7 +165,7 @@ $sequence "fire" {
 }
 
 $sequence "reload_start" {
-	"anims\reload_start.smd"
+	"anims\reload_start3.smd"
 	activity "ACT_RELOAD_START" 1
 	fadein 0.2
 	fadeout 0.2
@@ -173,9 +173,9 @@ $sequence "reload_start" {
 }
 
 $sequence "reload_loop" {
-	"anims\reload_loop.smd"
+	"anims\reload_loop3.smd"
 	activity "ACT_VM_RELOAD" 1
-	{ event 5004 3 "Weapon_Shotgun.Reload" }
+	{ event 5004 1 "Weapon_Minigun.Reload" }
 	fadein 0.2
 	fadeout 0.2
 	snap
@@ -183,10 +183,10 @@ $sequence "reload_loop" {
 }
 
 $sequence "reload_end" {
-	"anims\reload_end.smd"
+	"anims\reload_end4.smd"
 	activity "ACT_RELOAD_FINISH" 1
 	{ event 5004 12 "Weapon_ScatterBrain.Cock_Back" }
-	{ event 5004 16 "Weapon_ScatterBrain.Cock_Forward" }
+	{ event 5004 17 "Weapon_ScatterBrain.Cock_Forward" }
 	fadein 0.2
 	fadeout 0.2
 	fps 30

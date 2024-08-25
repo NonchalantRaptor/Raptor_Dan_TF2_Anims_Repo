@@ -19,7 +19,7 @@ nodes
 16 "bip_upperArm_R" 15
 17 "v_minigun_parent" -1
 18 "v_minigun_body" 17
-19 "v_minigun_barrel" 18
+19 "v_sewingbarrel" 18
 end
 skeleton
 time 0

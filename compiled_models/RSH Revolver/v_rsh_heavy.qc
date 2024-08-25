@@ -106,6 +106,7 @@ $sequence "reload_start" {
 	{ event 5004 5 "Weapon_Tranq.Reload1" }
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 30
 }
 

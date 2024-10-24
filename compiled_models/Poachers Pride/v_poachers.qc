@@ -143,7 +143,7 @@ $sequence "fire" {
 }
 
 $sequence "reload" {
-	"anims\reload_slow.smd"
+	"anims\reload3.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 5 "Weapon_HuntingRifle.OpenReload" }
 	{ event 5004 8 "Weapon_HuntingRifle.ShellsReload" }
@@ -151,7 +151,7 @@ $sequence "reload" {
 	{ event 6002 13 "3" }
 	{ event 5004 19 "Weapon_HuntingRifle.InsertReload" }
 	{ event 5004 37 "Weapon_HuntingRifle.CloseReload" }
-	fadein 0.2
+	fadein 0
 	fadeout 0.2
 	snap
 	fps 30

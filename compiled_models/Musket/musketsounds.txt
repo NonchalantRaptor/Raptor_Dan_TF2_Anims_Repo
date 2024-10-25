@@ -1,0 +1,107 @@
+// ------------------------------------------------------------------------------------ //
+// MUSKET
+// ------------------------------------------------------------------------------------ //
+"Weapon_Musket.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/musket_fire.wav"
+}
+
+"Weapon_Musket.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/musket_fire.wav"
+}
+
+"Weapon_Musket.Bullet"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume" 	"0.5"
+	"pitch"	"150"
+	"rndwave"
+	{
+			"wave"	")weapons/grenade_impact_direct01.wav"
+			"wave"	")weapons/grenade_impact_direct02.wav"
+			"wave"	")weapons/grenade_impact_direct03.wav"
+	}
+}
+
+"Weapon_Musket.Impact"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.5"
+	"pitch"	"150"
+	"rndwave"
+	{
+			"wave"	")weapons/grenade_impact.wav"
+			"wave"	")weapons/grenade_impact2.wav"
+			"wave"	")weapons/grenade_impact3.wav"
+	}
+}
+
+"Weapon_Musket.Slide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"wave"	"weapons/bow_arrow_slide.wav"
+}
+
+"Weapon_Musket.RamEnd"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"wave"	"physics/wood/wood_furniture_impact_soft1.wav"
+}
+
+"Weapon_Musket.Tear"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.3"
+	"wave"		")physics/cardboard/cardboard_box_impact_bullet1.wav"
+}
+
+"Weapon_Musket.Spit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.3"
+	"pitch"		"200"
+	"wave"		")physics/flesh/flesh_squishy_impact_hard1.wav"
+}
+
+"Weapon_Musket.Pour1"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.5"
+	"pitch"	"250"
+	"wave"		")weapons/debris1.wav"
+}
+
+"Weapon_Musket.Pour2"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.5"
+	"pitch"	"150"
+	"wave"		")weapons/debris1.wav"
+}
+
+"Weapon_Musket.WorldReload"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		"weapons/ar2/npc_ar2_reload.wav"
+}

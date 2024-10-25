@@ -84,7 +84,7 @@ $sequence "idle" {
 }
 
 $sequence "idle_motor" {
-	"anims\motor_idle2.smd"
+	"anims\motor_idle4.smd"
 //	activity "ACT_VM_IDLE" 1
 	fadein 0.2
 	fadeout 0.2
@@ -94,7 +94,7 @@ $sequence "idle_motor" {
 }
 
 $sequence "fire_nospool" {
-	"anims\fire_nospool.smd"
+	"anims\fire_nospool2.smd"
 //	activity "ACT_VM_PRIMARYATTACK" 1
 	fadein 0.2
 	fadeout 0.2
@@ -132,7 +132,7 @@ $sequence "swingC" {
 }
 
 $sequence "spool_up" {
-	"anims\spool_up.smd"
+	"anims\spool_up2.smd"
 	activity "ACT_MP_ATTACK_STAND_PREFIRE" 1
 	fadein 0.2
 	fadeout 0.2
@@ -141,7 +141,7 @@ $sequence "spool_up" {
 }
 
 $sequence "spool_idle" {
-	"anims\spool_idle.smd"
+	"anims\spool_idle2.smd"
 	activity "ACT_VM_SECONDARYATTACK" 1
 	fadein 0.2
 	fadeout 0.2

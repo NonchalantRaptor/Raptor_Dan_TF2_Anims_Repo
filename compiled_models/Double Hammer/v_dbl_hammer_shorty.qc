@@ -15,8 +15,8 @@ $illumposition -0.001 23.577 -0.703
 
 $cdmaterials "models\weapons\v_supershotgun\"
 
-$attachment "muzzle" "weapon_bone" 0.00 4.30 27.00 rotate -90 -0 0
-$attachment "eject_brass" "root" -8 -10 -15 rotate 30 -90 0
+$attachment "muzzle" "weapon_bone" 1.10 4.13 28.02 rotate -90 -0 0
+$attachment "eject_brass" "root" -11.60 -15.00 -10.00 rotate 90 -90 0
 
 $cbox 0 0 0 0 0 0
 
@@ -114,9 +114,9 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire_tame.smd"
+	"anims\fire_tame3.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	fadein 0.2
+	fadein 0.1
 	fadeout 0.2
 	node "raised"
 	snap
@@ -126,7 +126,7 @@ $sequence "fire" {
 $sequence "fire_duplet" {
 	"anims\fire_tame_duplet.smd"
 	activity "ACT_VM_SECONDARYATTACK" 1
-	fadein 0.2
+	fadein 0.1
 	fadeout 0.2
 	node "raised"
 	snap
@@ -134,7 +134,7 @@ $sequence "fire_duplet" {
 }
 
 $sequence "reload" {
-	"anims\reload_cock.smd"
+	"anims\reload.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 3 "Weapon_DoubleBarrel.TubeOpen" }
 	{ event 5004 6 "Weapon_DoubleBarrel.ShellsOut" }
@@ -142,7 +142,7 @@ $sequence "reload" {
 	{ event 6002 16 "3" }
 	{ event 5004 19 "Weapon_DoubleBarrel.ShellsIn" }
 	{ event 5004 32 "Weapon_DoubleBarrel.TubeClose" }
-	fadein 0.2
+	fadein 0
 	fadeout 0.2
 	node "raised"
 	fps 30

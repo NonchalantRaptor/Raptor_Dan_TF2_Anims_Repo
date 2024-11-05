@@ -15,8 +15,8 @@ $illumposition -0.001 23.577 -0.703
 
 $cdmaterials "models\weapons\v_supershotgun\"
 
-$attachment "muzzle" "weapon_bone" 0 3.73 34.92 rotate -90 0 0
-$attachment "eject_brass" "root" -8 -10 -15 rotate 30 -90 0
+$attachment "muzzle" "weapon_bone" 1.10 4.13 28.02 rotate -90 -0 0
+$attachment "eject_brass" "root" -11.60 -15.00 -10.00 rotate 90 -90 0
 
 $cbox 0 0 0 0 0 0
 

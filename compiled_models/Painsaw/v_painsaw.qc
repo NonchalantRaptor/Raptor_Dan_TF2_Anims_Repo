@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$origin 2 -5 -1
+$origin 2 -5 -1 
 
 $modelname "weapons\v_models\v_painsaw.mdl"
 

@@ -2,7 +2,7 @@
 
 $modelname "weapons\v_models\v_doubletap_demo.mdl"
 
-$origin 3 3 2
+$origin 5 3 2
 
 $bodygroup "studio"
 {
@@ -125,11 +125,11 @@ $sequence "fire_right" {
 }
 
 $sequence "reload" {
-	"anims\reload2.smd"
+	"anims\reload4.smd"
 	activity "ACT_VM_RELOAD" 1
 	{ event 5004 5 "Weapon_GrenadeLauncher.DrumOpen" }
-	{ event 5004 28 "Weapon_GrenadeLauncher.DrumLoad" }
-	{ event 5004 36 "Weapon_GrenadeLauncher.DrumClose" }
+	{ event 5004 18 "Weapon_GrenadeLauncher.DrumLoad" }
+	{ event 5004 32 "Weapon_GrenadeLauncher.DrumClose" }
 	fadein 0.2
 	fadeout 0.2
 	snap

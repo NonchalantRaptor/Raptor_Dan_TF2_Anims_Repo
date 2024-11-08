@@ -149,9 +149,9 @@ $sequence "reload" {
 	{ event 5004 8 "Weapon_HuntingRifle.ShellsReload" }
 	{ event 6002 13 "3" }
 	{ event 6002 13 "3" }
-	{ event 5004 19 "Weapon_HuntingRifle.InsertReload" }
-	{ event 5004 37 "Weapon_HuntingRifle.CloseReload" }
-	fadein 0.2
+	{ event 5004 15 "Weapon_HuntingRifle.InsertReload" }
+	{ event 5004 25 "Weapon_HuntingRifle.CloseReload" }
+	fadein 0.1
 	fadeout 0.2
 	snap
 	fps 30

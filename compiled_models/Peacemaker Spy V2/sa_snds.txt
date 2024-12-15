@@ -1,0 +1,66 @@
+// ------------------------------------------------------------------------------------ //
+// Single Action Revolver
+// ------------------------------------------------------------------------------------ //
+"Weapon_SA.HammerBack"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.4"
+	"pitch"		"150"
+	"wave"		"weapons/sniper_bolt_forward.wav"
+}
+"Weapon_SA.HammerForward"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.4"
+	"pitch"		"150"
+	"wave"		"weapons/sniper_bolt_back.wav"
+}
+"Weapon_SA.GateOpen"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"pitch"		"150"
+	"wave"		"weapons/revolver_reload_cylinder_open.wav"
+}
+"Weapon_SA.GateClose"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"pitch"		"150"
+	"wave"		"weapons/revolver_reload_cylinder_close.wav"
+}
+"Weapon_SA.Eject"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"pitch"		"150"
+	"wave"		"weapons/grenade_launcher_drum_open.wav"
+}
+"Weapon_SA.Reload"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"pitch"		"175"
+	"wave"		"weapons/grenade_launcher_drum_load.wav"
+}
+"Weapon_SA.Spin"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"pitch"		"150"
+	"wave"		"weapons/grenade_launcher_drum_stop.wav"
+}
+"Weapon_SA.ReloadWorld"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		"weapons/default_reload.wav"
+}

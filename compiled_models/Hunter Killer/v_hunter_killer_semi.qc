@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons\custom\v_models\v_hunter_killer_semi.mdl"
+$modelname "weapons\v_models\v_hunter_killer_semi.mdl"
 
 $origin 0 -6 0
 

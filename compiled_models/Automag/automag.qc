@@ -13,7 +13,7 @@ $illumposition 0 0 0
 $cdmaterials "models\weapons\c_items\"
 
 $attachment "muzzle" "weapon_bone" 0.10 3.89 14.76 rotate -90 0 0
-$attachment "eject_brass" "weapon_slide" 0.90 0.50 -0.10 rotate 0 45 -180
+$attachment "eject_brass" "weapon_bone" 1.00 4.10 3.00 rotate 0 45 -180
 
 $cbox 0 0 0 0 0 0
 

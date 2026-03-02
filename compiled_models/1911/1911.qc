@@ -100,7 +100,7 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire.smd"
+	"anims\fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 6002 2 "4" }
 	fadein 0.2

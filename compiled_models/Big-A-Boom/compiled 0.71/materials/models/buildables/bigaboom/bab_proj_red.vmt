@@ -1,0 +1,25 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\buildables\bigaboom\bab_proj_red"
+	"$bumpmap" "models\tf2DefaultStuff\normal"
+
+	"$nocull" "1"
+
+	"$phong" "1"
+	"$phongexponent" "25"
+	"$phongboost" "25"	
+	"$lightwarptexture" "models\buildables\sentry1\Sentry1_lightwarp"
+	"$phongfresnelranges" "[0.25 0.5 1]"
+
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"building_invis"
+		{
+		}
+	}
+
+}

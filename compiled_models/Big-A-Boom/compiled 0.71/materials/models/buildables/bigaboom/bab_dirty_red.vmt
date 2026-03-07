@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\buildables\bigaboom\bab_gibs_red"
+	"$bumpmap" "models\tf2DefaultStuff\normal"
+
+	"$nocull" "1"
+
+	
+	"$BasemapAlphaPhongMask" "1"
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "0.4"	
+	"$phongfresnelranges"	"[0.3]"
+	"$halflambert" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"building_invis"
+		{
+		}
+	}
+
+
+}

@@ -1,0 +1,30 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"models\buildables\bigaboom\bab_blueprint_model"
+	"$bumpmap" "models\tf2DefaultStuff\normal"
+
+	"$nocull" "1"
+
+	"$model"		1
+	"$nocull" 1
+	"$translucent" 1
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "4.0"	
+	"$phongfresnelranges"	"[0.3]"
+	"$halflambert" "1"
+	"$surfaceprop"	"no_decal"
+
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"building_invis"
+		{
+		}
+	}
+
+}

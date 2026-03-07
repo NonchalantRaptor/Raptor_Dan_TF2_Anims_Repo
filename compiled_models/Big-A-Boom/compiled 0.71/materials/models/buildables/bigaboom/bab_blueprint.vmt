@@ -1,0 +1,28 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\buildables\bigaboom\bab_blueprint"
+	"$bumpmap" "models\tf2DefaultStuff\normal"
+
+	"$nocull" "1"
+
+	"$surfaceprop"	"no_decal"
+
+	"$lightwarptexture" "models\tf2DefaultStuff\'Big-a-Boom'HowitzerSentryGun_donkeymd&LizardOfOz_\whitesquare"
+
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "1"	
+	"$phongfresnelranges"	"[0.3]"
+	"$halflambert" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"building_invis"
+		{
+		}
+	}
+
+}

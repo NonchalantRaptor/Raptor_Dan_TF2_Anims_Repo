@@ -19,8 +19,8 @@ $illumposition 0 0 0
 $cdmaterials "models\workshop\weapons\c_models\c_holePuncher\"
 $cdmaterials ""
 
-$attachment "muzzle" "weapon_bone" 0 3.8 37.04 rotate -90 0 0
-$attachment "eject_brass" "weapon_bone" 0.00 4.70 7.00 rotate 0 95 0
+$attachment "muzzle" "weapon_bone" 0.00 3.70 47.64 rotate -90 0 0
+$attachment "eject_brass" "weapon_bone" -1.30 3.70 8.50 rotate 0 -180 0
 
 $cbox 0 0 0 0 0 0
 

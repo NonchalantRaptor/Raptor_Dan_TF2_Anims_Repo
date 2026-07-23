@@ -55,7 +55,7 @@ $sequence draw "draw" ACT_VM_DRAW 1 fps 30.00 snap node raised {
 }
 
 $sequence idle "idle" loop ACT_VM_IDLE 1 fps 30.00 node raised
-$sequence fire "fire" ACT_VM_PRIMARYATTACK 1 fps 30.00 node raised snap
+$sequence fire "fire2" ACT_VM_PRIMARYATTACK 1 fps 30.00 node raised snap
 $sequence reload "reload3" ACT_VM_RELOAD 999 fps 30.00 snap {
   { event 5004 3 "Weapon_Revolver.Reload1" }
   { event 5004 20 "Weapon_Revolver.Reload2" }

@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$modelname "weapons/v_models/v_rancher_redux.mdl"
+$modelname "weapons/v_models/v_rancher.mdl"
 
 $bodygroup "default"
 {
@@ -99,7 +99,7 @@ $sequence "draw" {
 	"anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
 	{ event 5004 1 "Weapon_Scatter_Gun.Draw" }
-	{ event 5004 14 "Weapon_Wrench.HitHand" }
+	{ event 5004 8 "Weapon_Wrench.HitHand" }
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
@@ -118,11 +118,11 @@ $sequence "idle" {
 }
 
 $sequence "fire" {
-	"anims\fire4.smd"
+	"anims\fire5.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event 5004 7 "Weapon_LeverRifle.Cock_Back" }
-	{ event 5004 13 "Weapon_LeverRifle.Cock_Forward" }
-	{ event 6002 10 "4" }
+	{ event 5004 8 "Weapon_ShotgunEngineer.Cock_Back" }
+	{ event 5004 14 "Weapon_ShotgunEngineer.Cock_Forward" }
+	{ event 6002 11 "4" }
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
@@ -132,7 +132,6 @@ $sequence "fire" {
 
 $sequence "reload_start" {
 	"anims\reload_start.smd"
-	{ event 5004 1 "Weapon_Fist.Draw" }
 	activity "ACT_RELOAD_START" 1
 	fadein 0.2
 	fadeout 0
@@ -140,8 +139,8 @@ $sequence "reload_start" {
 }
 
 $sequence "reload_loop" {
-	"anims\reload_loop_new2.smd"
-	{ event 5004 12 "Weapon_LeverRifle.Reload" }
+	"anims\reload_loop_new3.smd"
+	{ event 5004 12 "Weapon_Shotgun.Reload" }
 	activity "ACT_VM_RELOAD" 1
 	fadein 0
 	fadeout 0.2
@@ -149,10 +148,9 @@ $sequence "reload_loop" {
 }
 
 $sequence "reload_end" {
-	"anims\reload_end_gen.smd"
-	{ event 5004 8 "Weapon_Wrench.HitHand" }
-	{ event 5004 12 "Weapon_LeverRifle.Cock_Back" }
-	{ event 5004 18 "Weapon_LeverRifle.Cock_Forward" }
+	"anims\reload_end_gen2.smd"
+	{ event 5004 9 "Weapon_ShotgunEngineer.Cock_Back" }
+	{ event 5004 15 "Weapon_ShotgunEngineer.Cock_Forward" }
 	activity "ACT_RELOAD_FINISH" 5
 	fadein 0.2
 	fadeout 0.2
@@ -160,11 +158,11 @@ $sequence "reload_end" {
 }
 
 $sequence "reload_end_alt" {
-	"anims\reload_end2.smd"
+	"anims\reload_end3.smd"
 	{ event 5004 1 "Weapon_SniperRifle.Draw" }
-	{ event 5004 8 "Weapon_LeverRifle.Cock_Back" }
-	{ event 5004 21 "Weapon_LeverRifle.Cock_Forward" }
-	{ event 5004 31 "Weapon_Wrench.HitHand" }
+	{ event 5004 5 "Weapon_ShotgunEngineer.Cock_Back" }
+	{ event 5004 17 "Weapon_ShotgunEngineer.Cock_Forward" }
+	{ event 5004 23 "Weapon_Wrench.HitHand" }
 	activity "ACT_RELOAD_FINISH" 1
 	fadein 0.2
 	fadeout 0.2
@@ -174,8 +172,8 @@ $sequence "reload_end_alt" {
 $sequence "charge" {
 	"anims\charge2.smd"
 	activity "ACT_VM_SECONDARYATTACK_SPECIAL" 1
-	{ event 5004 1 "Weapon_LeverRifle.Cock_Back" }
-	{ event 5004 7 "Weapon_LeverRifle.Cock_Forward" }
+	{ event 5004 2 "Weapon_ShotgunEngineer.Cock_Back" }
+	{ event 5004 8 "Weapon_ShotgunEngineer.Cock_Forward" }
 	fadein 0.2
 	fadeout 0.2
 	node "raised"
@@ -186,8 +184,8 @@ $sequence "charge" {
 $sequence "fire_charge" {
 	"anims\fire_charged.smd"
 	activity "ACT_VM_SECONDARYATTACK" 1
-	{ event 5004 10 "Weapon_LeverRifle.Cock_Back" }
-	{ event 5004 16 "Weapon_LeverRifle.Cock_Forward" }
+	{ event 5004 10 "Weapon_ShotgunEngineer.Cock_Back" }
+	{ event 5004 16 "Weapon_ShotgunEngineer.Cock_Forward" }
 	{ event 6002 13 "4" }
 	fadein 0.2
 	fadeout 0.2

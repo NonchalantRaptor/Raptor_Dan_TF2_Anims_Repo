@@ -16,8 +16,8 @@ $illumposition 6.794 0.073 32.85
 $cdmaterials "models\weapons\c_items\"
 $cdmaterials "models\weapons\v_revolver\"
 
-$attachment "muzzle" "weapon_bone" 0 2.5 38 rotate -90 0 0
-$attachment "eject_brass" "weapon_bone" 0.00 3.70 9.50 rotate 0 125 0
+$attachment "muzzle" "weapon_bone" 0.00 11.40 28.00 rotate -90 0 0
+$attachment "eject_brass" "weapon_bone" 0.00 12.70 -1.00 rotate 0 125 0
 
 $cbox 0 0 0 0 0 0
 
